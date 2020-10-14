@@ -1,0 +1,38 @@
+<div>
+  <header></header>
+  <main>
+    <div class="container">
+      <div class="poster">
+        <img src="assets/topRamen.png">
+      </div>
+      <div>
+        <div class="section">
+          <span>Select country</span>
+          <select (change)="onChange($event.target.value)">Countries
+            <option *ngFor="let i of countries">{{i}}</option>
+        </select>
+        </div>
+        <table class="table table-striped">
+          <thead>
+              <th>Brand</th>
+              <th>Country</th>
+              <th>Stars</th>
+              <th>Style</th>
+              <th>Top Ten</th>
+              <th>Variety</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let restraunt of restraunts">
+              <td>{{restraunt.Brand}}</td>
+              <td>{{restraunt.Country}}</td>
+              <td>{{restraunt.Stars}}</td>
+              <td>{{restraunt.Style}}</td>
+              <td>{{restraunt["Top Ten"]}}</td>
+              <td>{{restraunt.Variety}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>

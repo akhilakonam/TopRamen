@@ -1,0 +1,43 @@
+header{
+  background-color: rgb(255, 183, 8);
+  height: 2.5em;
+}
+
+main{
+  background-color: #e6e6e6;
+  min-height: 90vh;
+}
+
+.container{
+  width: 60%;
+  margin: auto auto;
+  background-color: white;
+}
+
+.poster{
+  background-color: #ED7723;
+}
+
+.poster > img{
+  display: block;
+  margin: auto auto;
+}
+
+th{
+  padding: 5px;
+}
+
+select{
+  margin: 5px;
+}
+
+section > span{
+  font-size: 14px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+select {
+  width: 10em;
+  height: 2em;
+}
